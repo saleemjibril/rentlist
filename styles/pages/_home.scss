@@ -3,7 +3,7 @@
  
   &__hero {
     position: relative;
-    background: #1E1E1E;
+    background: #2D8E95;
     width: 100%;
       // height: 740px;
       position: relative;
@@ -13,6 +13,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       height: 200px;
+
+      @media (max-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+      }
 
       & > a {
         display: block;
