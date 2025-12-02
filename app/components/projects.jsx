@@ -35,7 +35,7 @@ export default function ProjectsComponent() {
     <>
       <div className="projects__title-group">
         <Link href="/projects" prefetch={true}>
-          OUR PROJECTS
+          FEATURED LISTINGS
         </Link>
 
         <div className="projects__slide-buttons">
@@ -63,10 +63,13 @@ export default function ProjectsComponent() {
       <div className="projects__slide">
         {projects?.map((project, index) => (
           <ProjectCard
+            id={project?.id}
             title={project?.title}
             subtitle={project?.subtitle}
             date={project?.date}
             image={project?.image}
+            location={project?.location}
+            description={project?.description}
             key={index}
           />
         ))}

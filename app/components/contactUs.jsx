@@ -35,12 +35,12 @@ export default function ContactUs() {
   return (
     <div className="contactUs" id="contact">
       <div className="contactUs__title">
-        Got some questions?
-        <span>Reach out</span> to us
+        Have questions?
+        <span>Get in touch</span> with us
       </div>
       <div className="contactUs__subtitle">
-        Don't hesitate to reach you to us with any questions you might have.
-        Don't hesitate to reach you to us with any questions you might have
+        Whether you're looking to buy, rent, or have questions about our
+        listings, our team is here to help you find your perfect property.
       </div>
       <form className="contactUs__form" onSubmit={handleSubmit(onSubmit)}>
         <input

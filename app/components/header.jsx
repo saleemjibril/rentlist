@@ -40,25 +40,19 @@ function HeaderContent({ dark, pathname }) {
       className={`header ${isScrolled && !open && "header-float"} ${dark && "dark"}`}
     >
       <Link href="/" className="header__logo">
-        <Image alt="" src="/assets/logo-asmad.png" width={60} height={50} />
         <div>
-          SMAD <br />
-          INTEGRATED <br /> SERVICES
+          RENTLIST
         </div>
       </Link>
       <nav className="header__nav">
         <Link href="/" prefetch={true}>
           Home
         </Link>
-        <Link href="/general" prefetch={true}>
-          General
-        </Link>
-        <Link href="/about" prefetch={true}>
-          About
-        </Link>
-        <Link href="/#services">Services</Link>
         <Link href="/projects" prefetch={true}>
-          Projects
+          Listings
+        </Link>
+        <Link href="/#contact" prefetch={true}>
+          Contact
         </Link>
       </nav>
       <div className="header__buttons">
@@ -103,10 +97,8 @@ function HeaderContent({ dark, pathname }) {
         <div className="header__sidebar">
           <div className="header__sidebar__hamburger">
           <Link href="/" className="header__logo">
-        <Image alt="" src="/assets/logo-asmad.png" width={60} height={50} />
         <div>
-          SMAD <br />
-          INTEGRATED <br /> SERVICES
+          RENTLIST
         </div>
       </Link>
 
@@ -134,10 +126,8 @@ function HeaderContent({ dark, pathname }) {
 
           <nav>
             <Link href="/">Home</Link>
-            <Link href="/general">General</Link>
-            <Link href="/about">About</Link>
-            <Link href="/#services">Services</Link>
-            <Link href="/projects">Projects</Link>
+            <Link href="/projects">Listings</Link>
+            <Link href="/#contact">Contact</Link>
           </nav>
 
           <button>Contact us</button>

@@ -9,8 +9,8 @@ export default function WhyChooseUs() {
         <div>
           <div className="why__inner__title">Why choose us</div>
           <div className="why__inner__subtitle">
-            Our company’s core values revolve around three key words that every
-            action ASMAD INTEGRATED SERVICES LIMITED takes must measure up to:
+            Rentlist is your trusted partner in finding the perfect property.
+            Here's why thousands of customers choose us:
           </div>
         </div>
         <div className="why__inner__grid">
@@ -18,12 +18,11 @@ export default function WhyChooseUs() {
             <div className="why__inner__grid__card__number">01</div>
            <Image alt="" width={50} src={IntegrityBlack} />
             <div>
-              <div className="why__inner__grid__card__title">Integrity</div>
+              <div className="why__inner__grid__card__title">Verified Listings</div>
               <div className="why__inner__grid__card__subtitle">
-                Our top-level goal is always to build integrity by being honest
-                and open with our clients, consultants & subcontractors. We
-                recognize that without a high level of trust, the vital
-                relationships that can make or break a project will dissolve.
+                Every property on our platform is verified to ensure you get
+                exactly what you see. No hidden surprises or misleading
+                information - just genuine properties ready for you.
               </div>
             </div>
           </div>
@@ -33,12 +32,11 @@ export default function WhyChooseUs() {
             <Image alt="" width={50} src={IntegrityGrey} />
 
             <div>
-              <div className="why__inner__grid__card__title">CONFIDENCE</div>
+              <div className="why__inner__grid__card__title">Best Prices</div>
               <div className="why__inner__grid__card__subtitle">
-                We install in all our site and management a sense of self
-                achievement and personal responsibility to provide a feeling of
-                personal confidence for each and every person who works on a
-                ASMAD INTEGRATED SERVICES LIMITED Project.
+                We offer competitive pricing with no hidden charges or surprise
+                fees. Our transparent pricing ensures you know exactly what
+                you're paying for upfront.
               </div>
             </div>
           </div>
@@ -48,12 +46,11 @@ export default function WhyChooseUs() {
 
 
             <div>
-              <div className="why__inner__grid__card__title">ENJOYMENT</div>
+              <div className="why__inner__grid__card__title">Expert Support</div>
               <div className="why__inner__grid__card__subtitle">
-                We understand that each stakeholder in a Project has a job to
-                do. However, we Also know that if people enjoy what they do,
-                they’ll be happier, healthier and achieve more. For most of us,
-                work is a big part of life and life is for enjoying.
+                Our team of real estate experts are here to guide you every
+                step of the way. From property viewing to final paperwork,
+                we've got you covered.
               </div>
             </div>
           </div>
@@ -63,12 +60,11 @@ export default function WhyChooseUs() {
 
 
             <div>
-              <div className="why__inner__grid__card__title">ENJOYMENT</div>
+              <div className="why__inner__grid__card__title">Fast Process</div>
               <div className="why__inner__grid__card__subtitle">
-                We understand that each stakeholder in a Project has a job to
-                do. However, we Also know that if people enjoy what they do,
-                they’ll be happier, healthier and achieve more. For most of us,
-                work is a big part of life and life is for enjoying.
+                We streamline the property search and acquisition process to
+                help you find and secure your dream property quickly. No
+                unnecessary delays or bureaucracy.
               </div>
             </div>
           </div>

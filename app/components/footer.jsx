@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/public/assets/icons/logo.svg";
 
 
 export default function Footer() {
@@ -10,18 +9,14 @@ export default function Footer() {
         <div className="footer__inner__flex">
           <div className="footer__inner__flex__logo">
         <div className="header__logo" style={{color: "#FFF"}}>
-                <Image alt="" src="/assets/logo-asmad.png" width={60} height={50} />
-                SMAD <br />
-                INTEGRATED <br /> SERVICES
+                RENTLIST
               </div>       
          <div className="footer__inner__flex__logo__subtitle">
-         <span>RC: 7905453</span> <br /> <br />
-            Project Management, Engineering Construction & Design, Supply of Integrated Services, Supervision, Environmental Consultancy
+            Your trusted platform for finding premium properties for sale and rent across Nigeria.
 
             <br />
             <br />
-            <span>Address:</span> Gwandal Center Plot 1015,
-Fria Close Near EFCC Wuse 2, Abuja
+            <span>Address:</span> Lagos & Abuja, Nigeria
 
             </div>
             <div className="footer__inner__flex__logo__social-groups">
@@ -102,85 +97,84 @@ Fria Close Near EFCC Wuse 2, Abuja
               </svg>
             </div>
             <div className="footer__inner__flex__logo__email">
-            TEL: +2348100265352, +2348126702056
+            TEL: +234 800 RENTLIST
             <br />
               <br />
-              abdul_id@yahoo.com
+              info@rentlist.com
             </div>
           </div>
 
           <div className="footer__inner__flex__links">
             <div className="footer__inner__flex__links__group">
               <div className="footer__inner__flex__links__group__title">
-                Company
+                Quick Links
               </div>
               <Link prefetch={true}
                 className="footer__inner__flex__links__group__subtitle"
-                href="/about"
+                href="/"
               >
-                About
-              </Link>
-              <Link prefetch={true}
-                className="footer__inner__flex__links__group__subtitle"
-                href="/#services"
-              >
-                Services
+                Home
               </Link>
               <Link prefetch={true}
                 className="footer__inner__flex__links__group__subtitle"
                 href="/projects"
               >
-                Projects
-              </Link>
-            </div>
-            <div className="footer__inner__flex__links__group">
-              <div className="footer__inner__flex__links__group__title">
-                General
-              </div>
-              <Link prefetch={true}
-                className="footer__inner__flex__links__group__subtitle"
-                href="/general"
-              >
-                General
-              </Link>
-              <Link prefetch={true}
-                className="footer__inner__flex__links__group__subtitle"
-                href="/#reach"
-              >
-                Reach
-              </Link>
-              <Link prefetch={true}
-                className="footer__inner__flex__links__group__subtitle"
-                href="/#mission"
-              >
-               Our mission
-              </Link>
-             
-            
-             
-            </div>
-            <div className="footer__inner__flex__links__group">
-              <div className="footer__inner__flex__links__group__title">
-                Contact us
-              </div>
-
-              <Link prefetch={true}
-                className="footer__inner__flex__links__group__subtitle"
-                href="/#vision"
-              >
-                Our vision
+                Listings
               </Link>
               <Link prefetch={true}
                 className="footer__inner__flex__links__group__subtitle"
                 href="/#contact"
               >
-                Contact us
+                Contact
+              </Link>
+            </div>
+            <div className="footer__inner__flex__links__group">
+              <div className="footer__inner__flex__links__group__title">
+                Categories
+              </div>
+              <Link prefetch={true}
+                className="footer__inner__flex__links__group__subtitle"
+                href="/category/rental"
+              >
+                Rental
               </Link>
               <Link prefetch={true}
                 className="footer__inner__flex__links__group__subtitle"
-                href="/#values"
+                href="/category/houses-for-sale"
               >
-                Our values
+                Houses for Sale
+              </Link>
+              <Link prefetch={true}
+                className="footer__inner__flex__links__group__subtitle"
+                href="/category/service-apartments"
+              >
+               Service Apartments
+              </Link>
+            
+             
+            </div>
+            <div className="footer__inner__flex__links__group">
+              <div className="footer__inner__flex__links__group__title">
+                More
+              </div>
+
+              <Link prefetch={true}
+                className="footer__inner__flex__links__group__subtitle"
+                href="/category/commercial-plots"
+              >
+                Commercial Plots
+              </Link>
+              <Link prefetch={true}
+                className="footer__inner__flex__links__group__subtitle"
+                href="/category/shops"
+              >
+                Shops
+              </Link>
+              <Link prefetch={true}
+                className="footer__inner__flex__links__group__subtitle"
+                href="/category/hectares"
+              >
+                Land (Hectares)
               </Link>
             </div>
            
@@ -190,7 +184,7 @@ Fria Close Near EFCC Wuse 2, Abuja
         <div className="footer__inner__divider"></div>
 
         <div className="footer__inner__rights">
-          <div>© 2024 Asmad Integrated Services. All rights reserved.</div>
+          <div>© 2024 Rentlist. All rights reserved.</div>
         </div>
 
       </div>

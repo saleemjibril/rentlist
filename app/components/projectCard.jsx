@@ -1,20 +1,17 @@
 import OptimizedImage from "./optimizedImage";
+import Link from "next/link";
 
-export default function ProjectCard({title, subtitle, date, image}) {
+export default function ProjectCard({id, title, subtitle, date, image, location, description}) {
   return (
-    <div className="projects__grid__card">
+    <Link href={`/projects/${id}`} className="projects__grid__card">
     <div className="projects__grid__card__cover">
     <OptimizedImage alt="" src={image} objectFit="cover" layout="fill" />
       <div className="projects__grid__card__cover__info">
         <div className="projects__grid__card__cover__info__title">
-          Lorem ipsum
+          {location || title}
         </div>
         <div className="projects__grid__card__cover__info__body">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy
-          text ever since the 1500s, when an unknown printer took a galley
-          of type and scrambled it to make a type specimen book. It has
-          survived not only five centuries
+          {description || "Contact us for more details about this listing."}
         </div>
       </div>
     </div>
@@ -28,6 +25,6 @@ export default function ProjectCard({title, subtitle, date, image}) {
     <div className="projects__grid__card__date">
       {date}
     </div>
-  </div>
+  </Link>
   );
 }

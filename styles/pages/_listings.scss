@@ -1,0 +1,138 @@
+.listings-page {
+  min-height: 100vh;
+  background: #f8faf9;
+
+  &__hero {
+    background: linear-gradient(135deg, #00293d 0%, #005249 100%);
+    padding: 140px 20px 80px;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: clamp(32px, 6vw, 52px);
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+    font-family: var(--font-syne);
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  &__categories {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 32px 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #f0f0f0;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #4fd1c5;
+      border-radius: 10px;
+    }
+  }
+
+  &__category {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 24px;
+    background: #fff;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1a2e;
+
+    &:hover {
+      border-color: #4fd1c5;
+      background: rgba(79, 209, 197, 0.1);
+    }
+
+    &.active {
+      background: #005249;
+      border-color: #005249;
+      color: #fff;
+    }
+
+    &__icon {
+      font-size: 18px;
+    }
+  }
+
+  &__count {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px 24px;
+    font-size: 15px;
+    color: #666;
+
+    strong {
+      color: #005249;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+
+    @media (max-width: $desktop) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: $tablet-pro) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $phone) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__empty {
+    text-align: center;
+    padding: 80px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+
+    &__icon {
+      font-size: 64px;
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #1a1a2e;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #666;
+    }
+  }
+}
+
